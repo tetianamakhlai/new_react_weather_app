@@ -45,13 +45,19 @@ export default function App() {
                       />
                       <span id="temperatures"></span>
                       <span id="Celsium">
-                        <a href="" className="active">
+                        <a
+                          href="https://www.google.com/search?q=google+weather&rlz=1C5CHFA_enDE970DE970&oq=google+weather&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIMCAEQABgUGIcCGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAE0gEINDMwM2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
+                          className="active"
+                        >
                           °C|
                         </a>
                       </span>
                       <span id="units">
                         {" "}
-                        <a href="" id="fahrenheit-link">
+                        <a
+                          href="https://www.google.com/search?q=google+weather&rlz=1C5CHFA_enDE970DE970&oq=google+weather&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIMCAEQABgUGIcCGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAE0gEINDMwM2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
+                          id="fahrenheit-link"
+                        >
                           {" "}
                           °F
                         </a>
