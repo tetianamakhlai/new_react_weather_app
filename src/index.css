@@ -108,7 +108,7 @@ li {
 }
 
 #parameters,
-#WeatherDescr {
+#weatherDescr {
   padding: 0px;
   color: #70757a;
   display: inline-block;
@@ -123,12 +123,12 @@ li {
   font-weight: 400;
   line-height: 1;
 }
-#Celsium,
+#celsium,
 #units {
   font-size: 16px;
 }
 
-#Celsium {
+#celsium {
   position: relative;
   top: 3px;
 }

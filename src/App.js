@@ -7,7 +7,7 @@ export default function App() {
     <div className="container">
       <div className="weather-app-wrapper">
         <div className="weather-app">
-          <div className="Conrainer">
+          <div className="conrainer">
             <form id="search-form" className="mb-4">
               <div className="row">
                 <div className="col-9">
@@ -29,15 +29,15 @@ export default function App() {
               </div>
             </form>
           </div>
-          <div className="CityName">
+          <div className="cityName">
             <h1> Kyiv</h1>
           </div>
           <div className="row">
             <div className="col-6">
               <div className="row">
                 <div className="col-6">
-                  <div className="CityName">
-                    <div class="d-flex weather-temperature">
+                  <div className="cityName">
+                    <div className="d-flex weather-temperature">
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/3222/3222691.png"
                         alt="Clear"
@@ -60,7 +60,7 @@ export default function App() {
                   </div>
                 </div>
                 <div className="col-6">
-                  <div className="CityName">
+                  <div className="cityName">
                     <ul id="parameters">
                       <li>
                         Feels like: 10<span id="feels_like"></span>°C
@@ -78,12 +78,12 @@ export default function App() {
             </div>
             <div className="col-6">
               <div className="row">
-                <div class="col-6 info">
+                <div className="col-6 info">
                   <h2>Weather</h2>
                   <h3 id="date"></h3>
                   <h3 id="description"> </h3>
                 </div>
-                <div id="WeatherDescr">Cloudy</div>
+                <div id="weatherDescr">Cloudy</div>
               </div>
             </div>
           </div>
