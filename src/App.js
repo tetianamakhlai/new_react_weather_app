@@ -45,13 +45,13 @@ export default function App() {
                       />
                       <span id="temperatures"></span>
                       <span id="Celsium">
-                        <a href="#" className="active">
+                        <a href="" className="active">
                           °C|
                         </a>
                       </span>
                       <span id="units">
                         {" "}
-                        <a href="#" id="fahrenheit-link">
+                        <a href="" id="fahrenheit-link">
                           {" "}
                           °F
                         </a>
@@ -80,8 +80,7 @@ export default function App() {
               <div className="row">
                 <div className="col-6 info">
                   <h2>Weather</h2>
-                  <h3 id="date"></h3>
-                  <h3 id="description"> </h3>
+                  <h3 id="date">22.02.24</h3>
                 </div>
                 <div id="weatherDescr">Cloudy</div>
               </div>
