@@ -8,7 +8,7 @@ export default function App() {
       <div className="weather-app-wrapper">
         <div className="weather-app">
           <div className="conrainer">
-            <form id="search-form" className="mb-4">
+            <form className="mb-4" id="search-form">
               <div className="row">
                 <div className="col-9">
                   <input
@@ -45,7 +45,7 @@ export default function App() {
                       />
                       <span id="temperatures"></span>
                       <span id="Celsium">
-                        <a href="#" class="active">
+                        <a href="#" className="active">
                           °C|
                         </a>
                       </span>
