@@ -114,6 +114,11 @@ export default function App() {
           </div>
         </div>
       </div>
+      Created by{" "}
+      <a href="https://github.com/tetianamakhlai/new_react_weather_app">
+        {" "}
+        Tetiana Makhlai{" "}
+      </a>
     </div>
   );
 }
