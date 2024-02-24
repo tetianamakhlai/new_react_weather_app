@@ -9,16 +9,15 @@ export default function App() {
         <div className="weather-app">
           <div className="conrainer">
             <form className="mb-4" id="search-form">
-              <div className="row">
+              <form className="row">
                 <div className="col-9">
                   <input
                     type="search"
-                    placeholder=""
+                    placeholder="Enter a city..."
                     className="form-control"
                     id="cityInput"
                   />
                 </div>
-
                 <div className="col-3">
                   <input
                     type="submit"
@@ -26,7 +25,7 @@ export default function App() {
                     className="btn btn-primary w-100"
                   />
                 </div>
-              </div>
+              </form>
             </form>
           </div>
           <div className="cityName">
