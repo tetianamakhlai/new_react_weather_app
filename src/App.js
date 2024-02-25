@@ -1,117 +1,12 @@
 import React from "react";
 import "./App.css";
-import Forecast from "./Forecast";
+import Weather from "./Weather";
 
 export default function App() {
   return (
     <div className="container">
       <div className="weather-app-wrapper">
-        <div className="weather-app">
-          <div className="conrainer">
-            <form className="mb-4" id="search-form">
-              <form className="row">
-                <div className="col-9">
-                  <input
-                    type="search"
-                    placeholder="Enter a city..."
-                    className="form-control"
-                    id="cityInput"
-                  />
-                </div>
-                <div className="col-3">
-                  <input
-                    type="submit"
-                    value="Search"
-                    className="btn btn-primary w-100"
-                  />
-                </div>
-              </form>
-            </form>
-          </div>
-          <div className="cityName">
-            <h1> Kyiv</h1>
-          </div>
-          <div className="row">
-            <div className="col-6">
-              <div className="row">
-                <div className="col-6">
-                  <div className="cityName">
-                    <div className="d-flex weather-temperature">
-                      <img
-                        src="https://cdn-icons-png.flaticon.com/512/3222/3222691.png"
-                        alt="Clear"
-                        id="icon"
-                      />
-                      <span id="temperatures"></span>
-                      <span id="Celsium">
-                        <a
-                          href="https://www.google.com/search?q=google+weather&rlz=1C5CHFA_enDE970DE970&oq=google+weather&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIMCAEQABgUGIcCGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAE0gEINDMwM2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
-                          className="active"
-                        >
-                          °C|
-                        </a>
-                      </span>
-                      <span id="units">
-                        {" "}
-                        <a
-                          href="https://www.google.com/search?q=google+weather&rlz=1C5CHFA_enDE970DE970&oq=google+weather&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIMCAEQABgUGIcCGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAE0gEINDMwM2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
-                          id="fahrenheit-link"
-                        >
-                          {" "}
-                          °F
-                        </a>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-6">
-                  <div className="cityName">
-                    <ul id="parameters">
-                      <li>
-                        Feels like: 10<span id="feels_like"></span>°C
-                      </li>
-                      <li>
-                        Wind:<span id="wind"></span> 56 km/h
-                      </li>
-                      <li>
-                        Humidity: <span id="humidity">60</span>%
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-6">
-              <div className="row">
-                <div className="col-6 info">
-                  <h2>Weather</h2>
-                  <h3 id="date">22.02.24</h3>
-                </div>
-                <div id="weatherDescr">Cloudy</div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-2">
-              <Forecast />
-            </div>
-            <div className="col-2">
-              <Forecast />
-            </div>
-            <div className="col-2">
-              <Forecast />
-            </div>
-            <div className="col-2">
-              <Forecast />
-            </div>
-            <div className="col-2">
-              <Forecast />
-            </div>
-            <div className="col-2">
-              <Forecast />
-            </div>
-          </div>
-        </div>
+        <Weather defaultCity="Berlin" />
       </div>
       <p className="text-center">
         Created by{" "}
