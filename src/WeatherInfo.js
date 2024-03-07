@@ -14,11 +14,7 @@ export default function WeatherInfo(props) {
             <div className="col-6">
               <div className="cityName">
                 <div className="d-flex weather-temperature">
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/3222/3222691.png"
-                    alt="Clear"
-                    id="icon"
-                  />
+                  <img src={props.data.icon} alt="Clear" id="icon" />
                   <span id="temperatures">{Math.round(props.data.temp)}</span>
                   <span id="Celsium">
                     <a
