@@ -2,6 +2,7 @@ import React from "react";
 import Forecast from "./Forecast";
 import FormatedDate from "./FormatedDate";
 import Icon from "./Icon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
   return (
@@ -16,25 +17,7 @@ export default function WeatherInfo(props) {
               <div className="cityName">
                 <div className="d-flex weather-temperature">
                   <Icon code={props.data.icon} alt={props.data.description} />
-                  <span id="temperatures">{Math.round(props.data.temp)}</span>
-                  <span id="Celsium">
-                    <a
-                      href="https://www.google.com/search?q=google+weather&rlz=1C5CHFA_enDE970DE970&oq=google+weather&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIMCAEQABgUGIcCGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAE0gEINDMwM2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
-                      className="active"
-                    >
-                      °C|
-                    </a>
-                  </span>
-                  <span id="units">
-                    {" "}
-                    <a
-                      href="https://www.google.com/search?q=google+weather&rlz=1C5CHFA_enDE970DE970&oq=google+weather&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIMCAEQABgUGIcCGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAE0gEINDMwM2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
-                      id="fahrenheit-link"
-                    >
-                      {" "}
-                      °F
-                    </a>
-                  </span>
+                  <WeatherTemperature celsius={props.data.temp} />
                 </div>
               </div>
             </div>
