@@ -102,15 +102,22 @@ li {
   font-size: 13px;
   font-weight: normal;
   line-height: 15px;
+  padding-left: 10px;
 }
 #weather-forecast-min {
-  color: rgb(112, 117, 122);
+  color: rgb(90, 95, 97);
 }
 
+#WeatherForecast-day{
+padding-left: 20px;
+margin-top: 20px;
+margin-bottom: 5px;
+font-size: 14px;
+}
 #parameters,
 #weatherDescr {
   padding: 0px;
-  color: #70757a;
+  color:  rgb(90, 95, 97);
   display: inline-block;
   font-size: 12px;
   line-height: 16px;

@@ -55,22 +55,22 @@ export default function WeatherInfo(props) {
       </div>
       <div className="row">
         <div className="col-2">
-          <Forecast />
+          <Forecast code="10d" />
         </div>
         <div className="col-2">
-          <Forecast />
+          <Forecast code="04d" />
         </div>
         <div className="col-2">
-          <Forecast />
+          <Forecast code="10d" />
         </div>
         <div className="col-2">
-          <Forecast />
+          <Forecast code="01d" />
         </div>
         <div className="col-2">
-          <Forecast />
+          <Forecast code="04d" />
         </div>
         <div className="col-2">
-          <Forecast />
+          <Forecast code="10d" width={60} height={60} />
         </div>
       </div>
     </div>
