@@ -87,33 +87,11 @@ li {
   text-decoration: none;
 }
 
-.weather-forecast {
-  text-align: center;
-  color: #202124;
-}
 
-.weather-forecast-day {
-  line-height: 15px;
-  padding-top: 7px;
-}
 
-#weather-forecast-max,
-#weather-forecast-min {
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 15px;
-  padding-left: 10px;
-}
-#weather-forecast-min {
-  color: rgb(90, 95, 97);
-}
 
-#WeatherForecast-day{
-padding-left: 20px;
-margin-top: 20px;
-margin-bottom: 5px;
-font-size: 14px;
-}
+
+
 #parameters,
 #weatherDescr {
   padding: 0px;
@@ -142,16 +120,11 @@ font-size: 14px;
 
 #units {
   position: relative;
-  top: 3px;
+  top: 5px;
 }
 
 #description::first-letter {
   text-transform: capitalize;
 }
-#icon {
-  width: 60px;
-  height: 60px;
-}
-#forecast {
-  margin-top: 35px;
-}
+
+

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
+import Forecast from "./Forecast";
 import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
@@ -18,6 +19,8 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       feels: response.data.main.feels_like,
       icon: response.data.weather[0].icon,
+      lat: response.data.coord.lat,
+      lon: response.data.coord.lon,
     });
   }
 
@@ -62,6 +65,14 @@ export default function Weather(props) {
           </form>
         </div>
         <WeatherInfo data={weatherData} />
+
+        <Forecast
+          lon={weatherData.lon}
+          lat={weatherData.lat}
+          code="10d"
+          width={60}
+          height={60}
+        />
       </div>
     );
   } else {

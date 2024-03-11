@@ -1,0 +1,7 @@
+.row{
+    text-align: center;
+}
+
+#weather-forecast-min{
+    opacity: 0.5;
+}
