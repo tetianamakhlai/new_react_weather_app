@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Forecast.css";
 import WeatherForecastDay from "./WeatherForecastDay";
 import Icon from "./Icon";
@@ -8,10 +8,15 @@ export default function Forecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 
+  useEffect(() => {
+    setLoaded(false);
+  }, [props.lat]);
+
   function searchForecast(responce) {
     setForecast(responce.data.daily);
     setLoaded(true);
   }
+
   if (loaded) {
     return (
       <div className="WeatherForecast">
@@ -23,6 +28,8 @@ export default function Forecast(props) {
                   <WeatherForecastDay data={dailyForecast} />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>
