@@ -17,12 +17,38 @@ body {
 }
 
 .weather-app {
-  background-color: rgb(145, 112, 195);
+  background:  linear-gradient(360deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+  
   max-width: 652px;
   border: 1px solid #9ea0a3;
   border-radius: 10px;
   padding: 20px;
 }
+
+
+         
+     .btn{
+      background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%);
+      text-align: center;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;            
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .btn:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+   
+
+  
+
+
 h1 {
   color: #202124;
   font-size: 22px;
@@ -37,7 +63,7 @@ h2 {
   margin: 0px;
 }
 h3 {
-  color: #70757a;
+  color:  rgb(35, 35, 36);
   font-size: 16px;
   line-height: 20px;
   margin: 0px;
@@ -47,7 +73,7 @@ a {
   text-decoration: none;
 }
 .col-6.info {
-  color: #70757a;
+  color:  rgb(35, 35, 36);
   display: inline-block;
   font-size: 12px;
   line-height: 16px;
@@ -87,7 +113,13 @@ li {
   text-decoration: none;
 }
 
+.wind{
+  padding-right: 13px;
+}
 
+.humidity{
+  padding-right: 5px;
+}
 
 
 
@@ -95,12 +127,17 @@ li {
 #parameters,
 #weatherDescr {
   padding: 0px;
-  color:  rgb(90, 95, 97);
+  color:  rgb(35, 35, 36);
   display: inline-block;
   font-size: 12px;
   line-height: 16px;
   padding-left: 9px;
   padding-top: 6px;
+}
+#weatherDescr {
+  padding-top: 0px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 #temperatures {
@@ -123,7 +160,7 @@ li {
   top: 5px;
 }
 
-#description::first-letter {
+#description, #weatherDescr::first-letter {
   text-transform: capitalize;
 }
 

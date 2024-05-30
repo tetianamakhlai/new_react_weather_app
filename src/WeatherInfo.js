@@ -13,12 +13,14 @@ export default function WeatherInfo(props) {
         <div className="col-4">
           <div className="cityName">
             <div className="d-flex weather-temperature">
-              <Icon
-                code={props.data.icon}
-                alt={props.data.description}
-                width={100}
-                height={100}
-              />
+              <span className="main_icon">
+                <Icon
+                  code={props.data.icon}
+                  alt={props.data.description}
+                  width={100}
+                  height={100}
+                />
+              </span>
               <WeatherTemperature celsius={props.data.temp} />
             </div>
           </div>
@@ -31,17 +33,16 @@ export default function WeatherInfo(props) {
                 {Math.round(props.data.feels)}
                 °C
               </li>
-              <li>
-                Wind:
-                <span id="wind">{Math.round(props.data.wind)}</span> km/h
+              <li className="wind">
+                Wind: <span id="wind">{Math.round(props.data.wind)}</span> km/h
               </li>
-              <li>
+              <li className="humidity">
                 Humidity: <span id="humidity">{props.data.humidity}</span>%
               </li>
             </ul>
           </div>
         </div>
-        <div className="col-4">
+        <div className="col-4 text-end">
           <h2>Weather</h2>
           <h3 id="date">
             <FormatedDate date={props.data.date} />
